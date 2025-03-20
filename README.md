@@ -20,6 +20,8 @@ Smaller & faster than BERT (40% fewer parameters, 60% faster).
 Retains 97% performance of BERT.
 Ideal for sentiment analysis, as shown in research papers.
 
+🔗 **Dataset Link:** [IMDb Dataset on Hugging Face](https://huggingface.co/datasets/imdb)
+
 ## Performance Metrics
 The model was evaluated using accuracy, F1-score, precision, and recall.
 
