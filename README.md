@@ -12,7 +12,7 @@ Balanced dataset (25,000 positive, 25,000 negative).
 The dataset was preprocessed by removing punctuation, HTML tags, stopwords, and applying tokenization.
 
 ## Pre-trained Model
-We fine-tuned distilbert-base-uncased, a lightweight version of BERT, for faster and more efficient training.
+We fine-tuned the **`distilbert-base-uncased-finetuned-sst-2-english`** model from Hugging Face for sentiment analysis.  
 
 ✅ Why distilbert-base-uncased?
 
@@ -20,7 +20,7 @@ Smaller & faster than BERT (40% fewer parameters, 60% faster).
 Retains 97% performance of BERT.
 Ideal for sentiment analysis, as shown in research papers.
 
-🔗 **Dataset Link:** [IMDb Dataset on Hugging Face](https://huggingface.co/datasets/imdb)
+🔗 **Model Link:** [DistilBERT SST-2 on Hugging Face](https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english)
 
 ## Performance Metrics
 The model was evaluated using accuracy, F1-score, precision, and recall.
