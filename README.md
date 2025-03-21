@@ -51,6 +51,19 @@ This fine-tuning allowed my model to achieve 88.2% accuracy on IMDb reviews, mak
 | `weight_decay`             | 0.02   | Reduces overfitting                                         |
 | `warmup_steps`             | 500    | Stabilizes training in early epochs 
 
+After applying advanced preprocessing and optimizing hyperparameters, I enhanced the model and fine-tuned it further. 
+Below are the results after training for 5 epochs:
+
+| Epoch | Training Loss | Validation Loss | Accuracy |
+|-------|----------------|------------------|----------|
+| 1     | 0.105000       | 0.486047         | 89.27%   |
+| 2     | 0.084600       | 0.565210         | 89.42%   |
+| 3     | 0.061400       | 0.489563         | 90.43%   |
+| 4     | 0.034100       | 0.677959         | 91.01%   |
+| 5     | 0.010900       | 0.741574         | 91.02%   |
+
+✅ **The final model achieved an accuracy of 91.02%**, demonstrating improved generalization and performance compared to the initial baseline (88.2%).  
+
 ## Relevant Links
 
 🚀 [imdb dataset on Hugging Face](https://huggingface.co/datasets/stanfordnlp/imdb)
