@@ -48,6 +48,8 @@ per_device_eval_batch_size	                    16	                              
 weight_decay	                                  0.02	                                  Reduces overfitting
 warmup_steps	                                  500	                                    Stabilizes training in early epochs
 
+## Relevant Links
 
+🚀 [imdb dataset on Hugging Face](https://huggingface.co/datasets/stanfordnlp/imdb)
 
 🚀 [View My Fine-Tuned Model on Hugging Face](https://huggingface.co/dibajafarnejad/imdb-optimized-finetuned-distilbert/tree/main)
