@@ -36,7 +36,18 @@ The model was evaluated using accuracy, F1-score, precision, and recall.
 I applied NLTK-based preprocessing:
 Lowercasing, removing punctuation, stopwords, and HTML tags.
 Tokenization using Hugging Face's AutoTokenizer.
-### Fine-tuning on IMDb Dataset
+
+## 📈 Fine-Tuning Results (Before Enhancement)
+
+After initially fine-tuning the pre-trained model (`distilbert-base-uncased-finetuned-sst-2-english`), I observed the following performance:
+
+| Epoch | Training Loss | Validation Loss | Accuracy |
+|-------|----------------|------------------|----------|
+| 1     | 0.259800       | 0.245967         | 90.68%   |
+| 2     | 0.180100       | 0.265461         | 91.14%   |
+| 3     | 0.116100       | 0.357930         | 91.10%   |
+
+✅ These results represent the performance **before enhancing the model with additional preprocessing and hyperparameter tuning**.
 I trained the model using Hugging Face's Trainer API with the following hyperparameters:
 
 Optimizing these hyperparameters improved accuracy, generalization, and efficiency while preventing overfitting or instability.
