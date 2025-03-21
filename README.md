@@ -32,23 +32,24 @@ The model was evaluated using accuracy, F1-score, precision, and recall.
 ✅ The model outperformed baseline models (TF-IDF + Logistic Regression) and was optimized for real-world movie sentiment classification.
 
 ## Hyperparameters
-🔹 Preprocessing & Tokenization
+# Preprocessing & Tokenization
 I applied NLTK-based preprocessing:
 Lowercasing, removing punctuation, stopwords, and HTML tags.
 Tokenization using Hugging Face's AutoTokenizer.
-🔹 Fine-tuning on IMDb Dataset
+# Fine-tuning on IMDb Dataset
 I trained the model using Hugging Face's Trainer API with the following hyperparameters:
 
 Optimizing these hyperparameters improved accuracy, generalization, and efficiency while preventing overfitting or instability.
 This fine-tuning allowed my model to achieve 88.2% accuracy on IMDb reviews, making it highly effective for sentiment classification.
 
-Hyperparameter		                             Value                                    Why?
-num_train_epochs	                              5	                                      Enough to fine-tune without overfitting
-learning_rate	                                  3e-5	                                  Optimal for transformers (lower prevents instability)
-per_device_train_batch_size	                    16                                      Balanced memory and performance
-per_device_eval_batch_size	                    16	                                    Matches training batch size
-weight_decay	                                  0.02	                                  Reduces overfitting
-warmup_steps	                                  500	                                    Stabilizes training in early epochs
+| Hyperparameter              | Value | Why?                                                        |
+|----------------------------|--------|-------------------------------------------------------------|
+| `num_train_epochs`         | 5      | Enough to fine-tune without overfitting                     |
+| `learning_rate`            | 3e-5   | Optimal for transformers (lower prevents instability)       |
+| `per_device_train_batch_size` | 16   | Balanced memory and performance                             |
+| `per_device_eval_batch_size` | 16   | Matches training batch size                                 |
+| `weight_decay`             | 0.02   | Reduces overfitting                                         |
+| `warmup_steps`             | 500    | Stabilizes training in early epochs 
 
 ## Relevant Links
 
