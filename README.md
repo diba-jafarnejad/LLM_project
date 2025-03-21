@@ -22,11 +22,13 @@ It is lighter and faster than BERT, making it ideal for my project.
 ## Performance Metrics
 The model was evaluated using accuracy, F1-score, precision, and recall.
 
-Metric	        Score
-Accuracy	      88.2%
-F1-score	      88.0%
-Precision	      88.1%
-Recall	        87.9%
+| Metric     | Score  |
+|------------|--------|
+| Accuracy   | 88.2%  |
+| F1-score   | 88.0%  |
+| Precision  | 88.1%  |
+| Recall     | 87.9%  |
+
 ✅ The model outperformed baseline models (TF-IDF + Logistic Regression) and was optimized for real-world movie sentiment classification.
 
 ## Hyperparameters
