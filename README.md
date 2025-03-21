@@ -32,11 +32,11 @@ The model was evaluated using accuracy, F1-score, precision, and recall.
 ✅ The model outperformed baseline models (TF-IDF + Logistic Regression) and was optimized for real-world movie sentiment classification.
 
 ## Hyperparameters
-# Preprocessing & Tokenization
+### Preprocessing & Tokenization
 I applied NLTK-based preprocessing:
 Lowercasing, removing punctuation, stopwords, and HTML tags.
 Tokenization using Hugging Face's AutoTokenizer.
-# Fine-tuning on IMDb Dataset
+### Fine-tuning on IMDb Dataset
 I trained the model using Hugging Face's Trainer API with the following hyperparameters:
 
 Optimizing these hyperparameters improved accuracy, generalization, and efficiency while preventing overfitting or instability.
