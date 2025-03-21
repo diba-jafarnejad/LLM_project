@@ -37,7 +37,7 @@ I applied NLTK-based preprocessing:
 Lowercasing, removing punctuation, stopwords, and HTML tags.
 Tokenization using Hugging Face's AutoTokenizer.
 
-## 📈 Fine-Tuning Results (Before Enhancement)
+### 📈 Fine-Tuning Results (Before Enhancement)
 
 After initially fine-tuning the pre-trained model (`distilbert-base-uncased-finetuned-sst-2-english`), I observed the following performance:
 
