@@ -51,7 +51,7 @@ After initially fine-tuning the pre-trained model (`distilbert-base-uncased-fine
 I trained the model using Hugging Face's Trainer API with the following hyperparameters:
 
 Optimizing these hyperparameters improved accuracy, generalization, and efficiency while preventing overfitting or instability.
-This fine-tuning allowed my model to achieve 88.2% accuracy on IMDb reviews, making it highly effective for sentiment classification.
+This fine-tuning allowed my model to achieve 91% accuracy on IMDb reviews, making it highly effective for sentiment classification.
 
 | Hyperparameter              | Value | Why?                                                        |
 |----------------------------|--------|-------------------------------------------------------------|
