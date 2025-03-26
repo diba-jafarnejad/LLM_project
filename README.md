@@ -24,10 +24,10 @@ The model was evaluated using accuracy, F1-score, precision, and recall.
 
 | Metric     | Score  |
 |------------|--------|
-| Accuracy   | 88.2%  |
-| F1-score   | 88.0%  |
-| Precision  | 88.1%  |
-| Recall     | 87.9%  |
+| Accuracy   | 93%    |
+| F1-score   | 93%  |
+| Precision  | 93%  |
+| Recall     | 93%  |
 
 ✅ The model outperformed baseline models (TF-IDF + Logistic Regression) and was optimized for real-world movie sentiment classification.
 
@@ -43,9 +43,9 @@ After initially fine-tuning the pre-trained model (`distilbert-base-uncased-fine
 
 | Epoch | Training Loss | Validation Loss | Accuracy |
 |-------|----------------|------------------|----------|
-| 1     | 0.259800       | 0.245967         | 90.68%   |
-| 2     | 0.180100       | 0.265461         | 91.14%   |
-| 3     | 0.116100       | 0.357930         | 91.10%   |
+| 1     | 0.247500       | 0.269992         | 91%   |
+| 2     | 0.156200       | 0.315140         | 92%   |
+| 3     | 0.088800       | 0.331248         | 93%   |
 
 ✅ These results represent the performance **before enhancing the model with additional preprocessing and hyperparameter tuning**.
 I trained the model using Hugging Face's Trainer API with the following hyperparameters:
@@ -55,7 +55,7 @@ This fine-tuning allowed my model to achieve 91% accuracy on IMDb reviews, makin
 
 | Hyperparameter              | Value | Why?                                                        |
 |----------------------------|--------|-------------------------------------------------------------|
-| `num_train_epochs`         | 5      | Enough to fine-tune without overfitting                     |
+| `num_train_epochs`         | 5     | Enough to fine-tune without overfitting                     |
 | `learning_rate`            | 3e-5   | Optimal for transformers (lower prevents instability)       |
 | `per_device_train_batch_size` | 16   | Balanced memory and performance                             |
 | `per_device_eval_batch_size` | 16   | Matches training batch size                                 |
@@ -66,12 +66,12 @@ After applying advanced preprocessing and optimizing hyperparameters, I enhanced
 Below are the results after training for 5 epochs:
 
 | Epoch | Training Loss | Validation Loss | Accuracy |
-|-------|----------------|------------------|----------|
-| 1     | 0.105000       | 0.486047         | 89.27%   |
-| 2     | 0.084600       | 0.565210         | 89.42%   |
-| 3     | 0.061400       | 0.489563         | 90.43%   |
-| 4     | 0.034100       | 0.677959         | 91.01%   |
-| 5     | 0.010900       | 0.741574         | 91.02%   |
+|-------|---------------|-----------------|----------|
+| 1     | 0.253500      | 0.225871        | 91.12%   |
+| 2     | 0.147700      | 0.198965        | 93.25%   |
+| 3     | 0.075600      | 0.289623        | 93.36%   |
+| 4     | 0.030000      | 0.389572        | 93.36%   |
+| 5     | 0.012000      | 0.430142        | 93.51%   |
 
 ✅ **The final model achieved an accuracy of 91.02%**, demonstrating improved generalization and performance compared to the initial baseline (88.2%).  
 
