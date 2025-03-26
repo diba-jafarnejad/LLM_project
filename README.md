@@ -79,4 +79,4 @@ Below are the results after training for 5 epochs:
 
 🚀 [imdb dataset on Hugging Face](https://huggingface.co/datasets/stanfordnlp/imdb)
 
-🚀 [View My Fine-Tuned Model on Hugging Face](https://huggingface.co/dibajafarnejad/imdb-optimized-finetuned-distilbert/tree/main)
+🚀 [View My Fine-Tuned Model on Hugging Face](https://huggingface.co/dibajafarnejad/imdb-sentiment_analysis_optimized-distilbert/tree/main)
