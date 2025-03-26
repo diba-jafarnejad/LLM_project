@@ -42,10 +42,10 @@ Tokenization using Hugging Face's AutoTokenizer.
 After initially fine-tuning the pre-trained model (`distilbert-base-uncased-finetuned-sst-2-english`), I observed the following performance:
 
 | Epoch | Training Loss | Validation Loss | Accuracy |
-|-------|----------------|------------------|----------|
-| 1     | 0.247500       | 0.269992         | 91%   |
-| 2     | 0.156200       | 0.315140         | 92%   |
-| 3     | 0.088800       | 0.331248         | 93%   |
+|-------|---------------|-----------------|----------|
+| 1     | 0.247500      | 0.269992        | 91.11%   |
+| 2     | 0.156200      | 0.315140        | 92.70%   |
+| 3     | 0.088800      | 0.331248        | 93.46%   |
 
 ✅ These results represent the performance **before enhancing the model with additional preprocessing and hyperparameter tuning**.
 I trained the model using Hugging Face's Trainer API with the following hyperparameters:
@@ -73,7 +73,7 @@ Below are the results after training for 5 epochs:
 | 4     | 0.030000      | 0.389572        | 93.36%   |
 | 5     | 0.012000      | 0.430142        | 93.51%   |
 
-✅ **The final model achieved an accuracy of 91.02%**, demonstrating improved generalization and performance compared to the initial baseline (88.2%).  
+✅ **The final model achieved an accuracy of 93.5%**, demonstrating improved generalization and performance compared to the initial baseline (91%).  
 
 ## Relevant Links
 
